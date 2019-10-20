@@ -11,7 +11,8 @@ function mintAirDrop(address _to, uint256 _amount)  public returns (bool)
 \> npm i         <br>
 \> npm i --unsafe-perm -g truffle        <br>
 \> truffle develop                       <br>
-----------------   truffle 내부에서         <br>
+
+## ----------------   truffle 내부에서         <br>
 \>> compile                                 <br>
 \>> migrate                                  <br>
 \>> test                                     <br>
