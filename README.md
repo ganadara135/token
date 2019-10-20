@@ -8,11 +8,11 @@ function mintAirDrop(address _to, uint256 _amount)  public returns (bool)
 \> docker run -it -p 9545:9545 -p 8545:8545 -p 7545:7545 -p 3000:3000  --volume=$(pwd):/king3/  --name king3 -d node <br>
 \> npm i -g n    <br>
 \> n stable      <br>
-> npm i         <br>
-> npm i --unsafe-perm -g truffle        <br>
-> truffle develop                       <br>
+\> npm i         <br>
+\> npm i --unsafe-perm -g truffle        <br>
+\> truffle develop                       <br>
 ----------------   truffle 내부에서         <br>
->> compile                                 <br>
->> migrate                                  <br>
->> test                                     <br>
+\>> compile                                 <br>
+\>> migrate                                  <br>
+\>> test                                     <br>
 
