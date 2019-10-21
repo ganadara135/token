@@ -32,4 +32,4 @@ build -> contracts -> *.json  파일 안에 있습니다.  <br>
 
 
 # mintAirdrop 메소드 테스트 결과
-![Test Image 1]("mintAirdrop test result.png")
+![test reuslt](https://user-images.githubusercontent.com/24896007/67169922-76593c80-f3e9-11e9-825a-9933f7547aca.png)
