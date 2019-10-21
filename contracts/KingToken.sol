@@ -26,7 +26,7 @@ contract KingToken is ERC20Mintable {
 
   function mintAirDrop(address _to, uint256 _amount)  public returns (bool) {
     require(_to != address(0),"Don't use Null Address");
-    require(_amount == 0, "Not to input 0");
+    require(_amount != 0, "Not to input 0 of amount");
 
     _mint(_to, _amount);
     airDropHistory[_to].add(_amount);

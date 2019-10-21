@@ -56,6 +56,40 @@ contract("KingToken", (accounts) => {
         });
     });
 
+    it("mintAirDrop", () => {
+        KingToken.deployed()
+        .then(instance => instance.mintAirDrop(accounts[1], 33))
+        .catch( e => {
+            console.log(e);
+        });
+        // .then(val => {
+        //     console.log("True or False : ", val)
+        //     // console.log("True or False : ", val)
+        // })
+
+       // console.log("accounts[1] : ", accounts[1])
+
+        KingToken.deployed()
+        .then(instance => instance.balanceOf(accounts[1]))
+        .then(val => {
+            console.log("balanceOf account of reciever : ", val.toString(10))
+        })
+        .catch( e => {
+            console.log(e);
+        });
+
+    });
+
+    it("Check TotalSupply Again", () => {
+        KingToken.deployed()
+        .then(instance => instance.totalSupply())
+        .then(val => {
+            console.log("totalSupply : ", val.toString(10))
+        })
+        .catch( e => {
+            console.log(e);
+        });
+    });
    
 
 
